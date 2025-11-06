@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#FFF5F8"/>
+  <rect y="1100" width="1080" height="250" fill="#E91E63" />
+
+  <!-- Top Decoration -->
+  <circle cx="100" cy="100" r="60" fill="#FFB6C1" opacity="0.7"/>
+  <circle cx="200" cy="160" r="40" fill="#F8BBD0" opacity="0.6"/>
+  <circle cx="980" cy="130" r="70" fill="#F48FB1" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="540" y="120" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif"
+        font-size="46" font-weight="bold" fill="#E91E63">
+    🎂 वाढदिवस निमंत्रण 🎂
+  </text>
+
+  <!-- Child Name -->
+  <text x="540" y="230" text-anchor="middle"
+        font-family="Noto Sans Devanagari, sans-serif"
+        font-size="42" fill="#5D4037">{name}</text>
+
+  <!-- Photo Frame -->
+  <rect x="340" y="280" width="400" height="400" rx="30" fill="#FFFFFF" stroke="#E91E63" stroke-width="6"/>
+  <clipPath id="photoClip">
+    <rect x="340" y="280" width="400" height="400" rx="30"/>
+  </clipPath>
+
+  <!-- Photo Placeholder -->
+  <image x="340" y="280" width="400" height="400" clip-path="url(#photoClip)" xlink:href="{photo}" preserveAspectRatio="xMidYMid slice" />
+
+  <!-- Date, Time, Venue -->
+  <text x="540" y="750" text-anchor="middle"
+        font-family="Noto Sans Devanagari, sans-serif"
+        font-size="28" fill="#4E342E">
+    दिनांक : {date} | वेळ : {time}
+  </text>
+
+  <text x="540" y="810" text-anchor="middle"
+        font-family="Noto Sans Devanagari, sans-serif"
+        font-size="28" fill="#4E342E">
+    स्थळ : {venue}
+  </text>
+
+  <!-- Host -->
+  <text x="540" y="870" text-anchor="middle"
+        font-family="Noto Sans Devanagari, sans-serif"
+        font-size="26" fill="#6D4C41">
+    आयोजक : {host}
+  </text>
+
+  <!-- Footer -->
+  <text x="540" y="1230" text-anchor="middle"
+        font-family="Noto Sans Devanagari, sans-serif"
+        font-size="22" fill="#FFFFFF">
+    कृपया वेळेवर येण्याची कृपा करावी 🙏
+  </text>
+
+  <!-- Decorations -->
+  <circle cx="180" cy="1150" r="60" fill="#F06292" opacity="0.6"/>
+  <circle cx="900" cy="1150" r="60" fill="#F06292" opacity="0.6"/>
+
+</svg>

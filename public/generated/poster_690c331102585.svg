@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Modak&family=Khand:wght@400;600&family=Arya:wght@700&display=swap');
+    .fun-title { font-family: 'Modak', cursive; font-size: 74px; fill: #FF6B6B; }
+    .fun-name { font-family: 'Arya', sans-serif; font-size: 66px; fill: #2B6CB0; }
+    .fun-detail { font-family: 'Khand', sans-serif; font-size: 34px; fill: #2D3748; }
+    .fun-accent { font-family: 'Khand', sans-serif; font-size: 28px; fill: #4A5568; }
+  </style>
+
+  <!-- Fun Background -->
+  <rect width="1080" height="1350" fill="#EBF8FF"/>
+  
+  <!-- Colorful Dots -->
+  <circle cx="100" cy="100" r="25" fill="#FF6B6B"/>
+  <circle cx="980" cy="80" r="30" fill="#4ECDC4"/>
+  <circle cx="150" cy="1200" r="35" fill="#FFE66D"/>
+  <circle cx="930" cy="1150" r="28" fill="#FF6B6B"/>
+  <circle cx="500" cy="200" r="22" fill="#95E1D3"/>
+  <circle cx="600" cy="1250" r="26" fill="#F8C4C4"/>
+
+  <!-- Title with Party Emojis -->
+  <text x="540" y="150" text-anchor="middle" class="fun-title">🎉 वाढदिवसाची धमाल 🎉</text>
+
+  <!-- Name -->
+  <text x="540" y="250" text-anchor="middle" class="fun-name">आदर्श पाटील</text>
+
+  <!-- Star-shaped Photo Frame -->
+  <path d="M540,350 L580,450 L690,450 L610,520 L640,630 L540,570 L440,630 L470,520 L390,450 L500,450 Z" 
+        fill="white" stroke="#2B6CB0" stroke-width="6"/>
+  <clipPath id="starClip">
+    <path d="M540,360 L575,445 L670,445 L605,510 L630,600 L540,545 L450,600 L475,510 L410,445 L505,445 Z"/>
+  </clipPath>
+  <image x="410" y="360" width="260" height="260" clip-path="url(#starClip)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAADAFBMVEXznBL////lfSLzmQz1rj3ymhPkehzrixrkeyPqlErxxQ/znBHzmAf0mgvzmQrzmw/zmQjzmxDleiP0nRL0nxLzmw3leyP//v3zmxHqkhzzmg3zmg7xwQ/3nhLzlwT3sUL///71nBDzsRHxxg7//Pj//fvyyQ30nxf4vFv1ohz4nhL+9+zzmAn837D847upbAz+79j968z2qzPzlgP0nBL2rTn1pij/+vP947zywA6naAb/+/T4vmH1oyD//fnxxQ3//v/1nRH6z4r95sH3tUv1pyr0mw7++O7+7dLznBD2qS76zYXlfCLYiQ3+8+L0pSb2sD7+7tX84LP71Zj+8uD96Mb+9uj0nhX+8Nr958TolA/DfA2oaQf72aP3t0/2rjv83av2rDb82qX//vv70pH5wmn4v2P605X5xnP2qjLzrw/djQ75x3f6yn760Iz3uFP++/L/+fH85L7826f70Y/71536y4H5xG/3s0b6yXr+9OTqhh3tjxn1nhOlZgW7dQjQhQ3tmBCrbQ3n1be9jUKsbw73nRL0oyP/+/X+9eb6zof+8dz96cnwlRXzlAT//PbmfyHzrhDrlhDxmhHMgg3Thg63gzLGfg3p2b+scRStbAjkeRvkeBr72KDzmQ30nQ34uljngCD84rr1pCPzlQPymxLzsA/yyg3Mpmzmkg/izavQrXaxbwnYu42sawWxcQy+eQz4wGb4vV784rbzyyb3uVbzzTD++ejxlxTymBPyyB3zsxDvlw30oBL+/Pu0eyO7iju1cwyxeB7sn1zwtYH21LbqlEn88OTniDX1vzr43cTuqWzlex/000bvkRf3tk7ogh/44or33Xb9+OH55ZLsixrqihz0oRL85bfyxA7zoxHyuw/ytBDTs4DhyaT69/DInl7hjw/FmlbexJ3769v44Ybzmg/lehntpmfulir0tF/44oj322zqtGH1wz3QjSP0vTHUtof1rjPnojTszJnHkDnLhRbytlXNm029kEq5iDzp17nlkxD59Ovjz67x5NJy3IYkAAAK2ElEQVR4nO2cZ3gTRxqA52PJXU67Xq0sC4s1kn13JpKwjVxkO+7nirExNja2Kaa50gkYbFrAFIMhBtNDD4Se0C4hQA44COkV7pJc6qVez/VeuPJo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" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Floating Balloons -->
+  <circle cx="400" cy="300" r="35" fill="#FF6B6B"/>
+  <circle cx="680" cy="280" r="40" fill="#4ECDC4"/>
+  <circle cx="750" cy="350" r="32" fill="#FFE66D"/>
+
+  <!-- Details in Speech Bubbles -->
+  <rect x="290" y="650" width="500" height="60" rx="30" fill="#2B6CB0"/>
+  <text x="540" y="690" text-anchor="middle" class="fun-detail" fill="white">📅 दिनांक: १५ डिसेंबर २०२४</text>
+
+  <rect x="290" y="730" width="500" height="60" rx="30" fill="#38A169"/>
+  <text x="540" y="770" text-anchor="middle" class="fun-detail" fill="white">⏰ वेळ: संध्याकाळी ६:०० वाजता</text>
+
+  <rect x="290" y="810" width="500" height="60" rx="30" fill="#D69E2E"/>
+  <text x="540" y="850" text-anchor="middle" class="fun-detail" fill="white">🎯 स्थळ: शिवाजी नगर, पुणे - ४११००५</text>
+
+  <rect x="290" y="890" width="500" height="60" rx="30" fill="#E53E3E"/>
+  <text x="540" y="930" text-anchor="middle" class="fun-detail" fill="white">🎊 आयोजक: पाटील कुटुंब</text>
+
+  <!-- Fun Footer -->
+  <rect y="1000" width="1080" height="350" fill="#2B6CB0"/>
+  
+  <text x="540" y="1080" text-anchor="middle" class="fun-accent" fill="white">🎵 संगीत, नृत्य, मस्ती आणि अनंत आनंदाची वाट पाहत आहोत! 🎵</text>
+  <text x="540" y="1140" text-anchor="middle" class="fun-accent" fill="white">🍰 केक कटिंग, गेम्स आणि लॉटरीचा विशेष कार्यक्रम 🎁</text>
+  <text x="540" y="1220" text-anchor="middle" class="fun-accent" fill="white">🤹 आमच्यासोबत हा विशेष दिवस साजरा करायला येण्याची खात्री करा! 🤹</text>
+</svg>

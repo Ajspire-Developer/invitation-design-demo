@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Modak&family=Khand:wght@400;600&family=Arya:wght@700&display=swap');
+    .fun-title { font-family: 'Modak', cursive; font-size: 74px; fill: #FF6B6B; }
+    .fun-name { font-family: 'Arya', sans-serif; font-size: 66px; fill: #2B6CB0; }
+    .fun-detail { font-family: 'Khand', sans-serif; font-size: 34px; fill: #2D3748; }
+    .fun-accent { font-family: 'Khand', sans-serif; font-size: 28px; fill: #4A5568; }
+  </style>
+
+  <!-- Fun Background -->
+  <rect width="1080" height="1350" fill="#EBF8FF"/>
+  
+  <!-- Colorful Dots -->
+  <circle cx="100" cy="100" r="25" fill="#FF6B6B"/>
+  <circle cx="980" cy="80" r="30" fill="#4ECDC4"/>
+  <circle cx="150" cy="1200" r="35" fill="#FFE66D"/>
+  <circle cx="930" cy="1150" r="28" fill="#FF6B6B"/>
+  <circle cx="500" cy="200" r="22" fill="#95E1D3"/>
+  <circle cx="600" cy="1250" r="26" fill="#F8C4C4"/>
+
+  <!-- Title with Party Emojis -->
+  <text x="540" y="150" text-anchor="middle" class="fun-title">🎉 वाढदिवसाची धमाल 🎉</text>
+
+  <!-- Name -->
+  <text x="540" y="250" text-anchor="middle" class="fun-name">{name}</text>
+
+  <!-- Star-shaped Photo Frame -->
+  <path d="M540,350 L580,450 L690,450 L610,520 L640,630 L540,570 L440,630 L470,520 L390,450 L500,450 Z" 
+        fill="white" stroke="#2B6CB0" stroke-width="6"/>
+  <clipPath id="starClip">
+    <path d="M540,360 L575,445 L670,445 L605,510 L630,600 L540,545 L450,600 L475,510 L410,445 L505,445 Z"/>
+  </clipPath>
+  <image x="410" y="360" width="260" height="260" clip-path="url(#starClip)" xlink:href="{photo}" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Floating Balloons -->
+  <circle cx="400" cy="300" r="35" fill="#FF6B6B"/>
+  <circle cx="680" cy="280" r="40" fill="#4ECDC4"/>
+  <circle cx="750" cy="350" r="32" fill="#FFE66D"/>
+
+  <!-- Details in Speech Bubbles -->
+  <rect x="290" y="650" width="500" height="60" rx="30" fill="#2B6CB0"/>
+  <text x="540" y="690" text-anchor="middle" class="fun-detail" fill="white">📅 दिनांक: {date}</text>
+
+  <rect x="290" y="730" width="500" height="60" rx="30" fill="#38A169"/>
+  <text x="540" y="770" text-anchor="middle" class="fun-detail" fill="white">⏰ वेळ: {time}</text>
+
+  <rect x="290" y="810" width="500" height="60" rx="30" fill="#D69E2E"/>
+  <text x="540" y="850" text-anchor="middle" class="fun-detail" fill="white">🎯 स्थळ: {venue}</text>
+
+  <rect x="290" y="890" width="500" height="60" rx="30" fill="#E53E3E"/>
+  <text x="540" y="930" text-anchor="middle" class="fun-detail" fill="white">🎊 आयोजक: {host}</text>
+
+  <!-- Fun Footer -->
+  <rect y="1000" width="1080" height="350" fill="#2B6CB0"/>
+  
+  <text x="540" y="1080" text-anchor="middle" class="fun-accent" fill="white">🎵 संगीत, नृत्य, मस्ती आणि अनंत आनंदाची वाट पाहत आहोत! 🎵</text>
+  <text x="540" y="1140" text-anchor="middle" class="fun-accent" fill="white">🍰 केक कटिंग, गेम्स आणि लॉटरीचा विशेष कार्यक्रम 🎁</text>
+  <text x="540" y="1220" text-anchor="middle" class="fun-accent" fill="white">🤹 आमच्यासोबत हा विशेष दिवस साजरा करायला येण्याची खात्री करा! 🤹</text>
+</svg>

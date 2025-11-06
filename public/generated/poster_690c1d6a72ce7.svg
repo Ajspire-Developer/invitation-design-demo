@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Rozha+One&family=Khand:wght@500&display=swap');
+    .royal-title { font-family: 'Amita', cursive; font-size: 68px; fill: #D4AF37; }
+    .royal-name { font-family: 'Rozha One', serif; font-size: 76px; fill: #2C5530; font-weight: bold; }
+    .royal-detail { font-family: 'Khand', sans-serif; font-size: 32px; fill: #4A5568; }
+    .royal-accent { font-family: 'Amita', cursive; font-size: 36px; fill: #D4AF37; }
+  </style>
+
+  <!-- Gold Gradient Background -->
+  <defs>
+    <linearGradient id="goldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFEB3B"/>
+    </linearGradient>
+    <linearGradient id="crownGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#goldBg)"/>
+  
+  <!-- Crown Design -->
+  <path d="M440,120 L540,40 L640,120 L620,200 L460,200 Z" fill="url(#crownGradient)"/>
+  <circle cx="540" cy="80" r="15" fill="#FF6B6B"/>
+  <circle cx="480" cy="100" r="12" fill="#4ECDC4"/>
+  <circle cx="600" cy="100" r="12" fill="#FFE66D"/>
+
+  <!-- Title -->
+  <text x="540" y="280" text-anchor="middle" class="royal-title">👑 वाढदिवसाचे आमंत्रण 👑</text>
+
+  <!-- Name in Royal Style -->
+  <text x="540" y="380" text-anchor="middle" class="royal-name">आदर्श पाटील</text>
+
+  <!-- Photo Frame with Crown -->
+  <rect x="290" y="420" width="500" height="400" rx="20" fill="white" stroke="#D4AF37" stroke-width="8"/>
+  <image x="300" y="430" width="480" height="380" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAMgCAIAAABwAouTAAAN/0lEQVR4nO3bMW7bSABAUXmRM6SMr5M6bcr4WGnduvZ1UsZ1+myhBUGQFEVZsrXWfw/BQuaOZkYu9DGifPf7y48dAFT9c+0NAMA1CSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkfbr2Bi7p86+fw+OX+4f1YSsDAOg4N4Tj9gxe7h+G65PHW2Z4daL2T1zcEgAsOiuE46PV518/x83bG67sH+zHzOeZDBtPPrm4cmV9k7tZJiebPzoPADfpAvcIx4Ubh2QSlZf7h0MVnP84T+xkxeHK+ilwXrvxExfX2viqAbgNZ4Vw3LZxQuY52cfy1MwsHvtOOrRtz5sEAjSd+9HovoVHK7JlzOKzXru1/8w/cZ3/30utBcBHdPf7y49XP/lQSCYfZh7tzeKAycXhHuT4v5NnbWnt4k1BRQTIOiuE1+WvIAA430f9g/r5l0sB4BU+8IkQAM73UU+EAHARQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpd39f/lx7DwBwNU6EAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkCaEAKQJIQBpQghAmhACkPbp2hvY7Xa779++7h88Pj2fNH78lP3FjTOctOipM68vd85UG/d8aK1Tf88ABW94Ivz+7evwb33Ybrd7fHre/u580uCVSc6c4dTl3m3Ph9bSP4C5Nz8RPj4971u4fxeeHEqGH8enrvGY+ePFd/PFeRYHjFdffMqpO1zZzMqYxbU2Xjm65/W1Dq0+zOngCKS86z3CeUuGt9rhEDMZs/0MNJlnZcBu6cPD/ZVX7PCktdZ/G1uubNnz+lqHVl981QA37wpflln/pHT9Df2WrKd08d7exa2EXAuBiCt8WWbLFz3GH9Cd6u3ONJcN0sornR9GL7jumNoB3P19+fNGU698t3O4OL+dtniD7WiBTr11t3hXbGWSQzcOD4Xk0FpHX8XKPcLJVlf2PF/r6K96/uPR3QLchjcM4f/Ne979cqcN4KOo/EH95MufN7MWAGcKnQgBYK5yIgSARUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACkCSEAaUIIQJoQApAmhACk/Qsc1w41xIL7HQAAAABJRU5ErkJggg==" preserveAspectRatio="xMidYMid slice"/>
+  
+  <!-- Crown on Photo -->
+  <path d="M490,420 L540,370 L590,420 L570,450 L510,450 Z" fill="url(#crownGradient)"/>
+
+  <!-- Details -->
+  <text x="540" y="880" text-anchor="middle" class="royal-detail">📅 दिनांक: १५ डिसेंबर २०२४ </text>
+  <text x="540" y="940" text-anchor="middle" class="royal-detail">⏰ वेळ: संध्याकाळी ६:०० वाजता</text>
+  <text x="540" y="1000" text-anchor="middle" class="royal-detail">🏰 स्थळ: शिवाजी नगर, पुणे - ४११००५</text>
+  <text x="540" y="1060" text-anchor="middle" class="royal-detail">👑 आयोजक: पाटील कुटुंब</text>
+
+  <!-- Footer -->
+  <rect y="1120" width="1080" height="230" fill="#2C5530"/>
+  <text x="540" y="1200" text-anchor="middle" class="royal-accent" fill="white">आपल्या उपस्थितीने स्नेहसंमेलनाला चैतन्य येईल!</text>
+  <text x="540" y="1260" text-anchor="middle" class="royal-accent" fill="white">🎂 कृपया वेळेवर पोहोचावे 🙏</text>
+</svg>

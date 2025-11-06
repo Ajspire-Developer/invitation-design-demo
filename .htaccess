@@ -1,0 +1,6 @@
+<FilesMatch "\.(ttf|otf|woff|woff2)$">
+  Header set Access-Control-Allow-Origin "*"
+  AddType application/font-ttf .ttf
+  AddType application/font-woff .woff
+  AddType application/font-woff2 .woff2
+</FilesMatch>

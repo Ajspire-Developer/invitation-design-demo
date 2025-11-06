@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Khand:wght@500&family=Rozha+One&display=swap');
+      
+      /* Enhanced fallback system */
+      .floral-title { 
+        font-family: 'Amita', 'Noto Sans Devanagari', 'Arial Unicode MS', 'Nirmala UI', sans-serif; 
+        font-size: 60px; 
+        fill: #C53030; 
+        font-weight: 700;
+      }
+      .floral-name { 
+        font-family: 'Rozha One', 'Noto Sans Devanagari', 'Arial Unicode MS', 'Nirmala UI', serif; 
+        font-size: 70px; 
+        fill: #22543D; 
+      }
+      .floral-detail { 
+        font-family: 'Khand', 'Noto Sans Devanagari', 'Arial Unicode MS', 'Nirmala UI', sans-serif; 
+        font-size: 32px; 
+        fill: #4A5568; 
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+
+  <!-- Floral Background -->
+  <rect width="1080" height="1350" fill="#FFF9F9"/>
+  
+  <!-- Flower Designs -->
+  <circle cx="150" cy="150" r="40" fill="#FBB6CE"/>
+  <circle cx="150" cy="150" r="20" fill="#E53E3E"/>
+  
+  <circle cx="900" cy="120" r="35" fill="#C6F6D5"/>
+  <circle cx="900" cy="120" r="15" fill="#38A169"/>
+  
+  <circle cx="200" cy="1200" r="45" fill="#BEE3F8"/>
+  <circle cx="200" cy="1200" r="25" fill="#3182CE"/>
+  
+  <circle cx="850" cy="1150" r="38" fill="#FAF089"/>
+  <circle cx="850" cy="1150" r="18" fill="#D69E2E"/>
+
+  <!-- Title -->
+  <text x="540" y="160" text-anchor="middle" class="floral-title">🌸 वाढदिवसाचे पुष्पहार 🌸</text>
+
+  <!-- Name -->
+  <text x="540" y="260" text-anchor="middle" class="floral-name">आदर्श पाटील</text>
+
+  <!-- Oval Photo Frame with Flowers -->
+  <ellipse cx="540" cy="520" rx="220" ry="180" fill="white" stroke="#C53030" stroke-width="6"/>
+  <clipPath id="ovalClip">
+    <ellipse cx="540" cy="520" rx="215" ry="175"/>
+  </clipPath>
+  <image x="325" y="345" width="430" height="350" clip-path="url(#ovalClip)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAADAFBMVEXznBL////lfSLzmQz1rj3ymhPkehzrixrkeyPqlErxxQ/znBHzmAf0mgvzmQrzmw/zmQjzmxDleiP0nRL0nxLzmw3leyP//v3zmxHqkhzzmg3zmg7xwQ/3nhLzlwT3sUL///71nBDzsRHxxg7//Pj//fvyyQ30nxf4vFv1ohz4nhL+9+zzmAn837D847upbAz+79j968z2qzPzlgP0nBL2rTn1pij/+vP947zywA6naAb/+/T4vmH1oyD//fnxxQ3//v/1nRH6z4r95sH3tUv1pyr0mw7++O7+7dLznBD2qS76zYXlfCLYiQ3+8+L0pSb2sD7+7tX84LP71Zj+8uD96Mb+9uj0nhX+8Nr958TolA/DfA2oaQf72aP3t0/2rjv83av2rDb82qX//vv70pH5wmn4v2P605X5xnP2qjLzrw/djQ75x3f6yn760Iz3uFP++/L/+fH85L7826f70Y/71536y4H5xG/3s0b6yXr+9OTqhh3tjxn1nhOlZgW7dQjQhQ3tmBCrbQ3n1be9jUKsbw73nRL0oyP/+/X+9eb6zof+8dz96cnwlRXzlAT//PbmfyHzrhDrlhDxmhHMgg3Thg63gzLGfg3p2b+scRStbAjkeRvkeBr72KDzmQ30nQ34uljngCD84rr1pCPzlQPymxLzsA/yyg3Mpmzmkg/izavQrXaxbwnYu42sawWxcQy+eQz4wGb4vV784rbzyyb3uVbzzTD++ejxlxTymBPyyB3zsxDvlw30oBL+/Pu0eyO7iju1cwyxeB7sn1zwtYH21LbqlEn88OTniDX1vzr43cTuqWzlex/000bvkRf3tk7ogh/44or33Xb9+OH55ZLsixrqihz0oRL85bfyxA7zoxHyuw/ytBDTs4DhyaT69/DInl7hjw/FmlbexJ3769v44Ybzmg/lehntpmfulir0tF/44oj322zqtGH1wz3QjSP0vTHUtof1rjPnojTszJnHkDnLhRbytlXNm029kEq5iDzp17nlkxD59Ovjz67x5NJy3IYkAAAK2ElEQVR4nO2cZ3gTRxqA52PJXU67Xq0sC4s1kn13JpKwjVxkO+7nirExNja2Kaa50gkYbFrAFIMhBtNDD4Se0C4hQA44COkV7pJc6qVez/VeuPJo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" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Flower Corners -->
+  <circle cx="320" cy="520" r="25" fill="#FBB6CE"/>
+  <circle cx="760" cy="520" r="25" fill="#C6F6D5"/>
+
+  <!-- Details with Flower Bullets -->
+  <g transform="translate(0, 650)">
+    <text x="540" y="0" text-anchor="middle" class="floral-detail">🌺 दिनांक: १५ डिसेंबर २०२४</text>
+    <text x="540" y="60" text-anchor="middle" class="floral-detail">🌷 वेळ: संध्याकाळी ६:०० वाजता</text>
+    <text x="540" y="120" text-anchor="middle" class="floral-detail">🏡 स्थळ: शिवाजी नगर, पुणे - ४११००५</text>
+    <text x="540" y="180" text-anchor="middle" class="floral-detail">👨‍👩‍👧‍👦 आयोजक: पाटील कुटुंब</text>
+  </g>
+
+  <!-- Floral Footer -->
+  <rect y="950" width="1080" height="400" fill="#22543D"/>
+  
+  <!-- Footer Flowers -->
+  <circle cx="300" cy="1000" r="20" fill="#FBB6CE"/>
+  <circle cx="780" cy="1000" r="20" fill="#FAF089"/>
+  <circle cx="200" cy="1250" r="25" fill="#BEE3F8"/>
+  <circle cx="880" cy="1250" r="25" fill="#C6F6D5"/>
+  
+  <text x="540" y="1050" text-anchor="middle" class="floral-detail" fill="white">आपल्या सहवासातून हा दिवस अविस्मरणीय होईल!</text>
+  <text x="540" y="1120" text-anchor="middle" class="floral-detail" fill="white">🌸 फुलांसारखे सुंदर आणि सुगंधीत क्षणांची वाट पाहत आहोत 🌸</text>
+</svg>
