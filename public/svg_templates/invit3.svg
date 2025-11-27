@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Rozha One">@import url(https://fonts.googleapis.com/css2?family=Rozha+One%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+    <style bx:fonts="Amita">@import url(https://fonts.googleapis.com/css2?family=Amita%3Aital%2Cwght%400%2C400%3B0%2C700&amp;display=swap);</style>
+    <style bx:fonts="Modak">@import url(https://fonts.googleapis.com/css2?family=Modak%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+    <style bx:fonts="Arya">@import url(https://fonts.googleapis.com/css2?family=Arya%3Aital%2Cwght%400%2C400%3B0%2C700&amp;display=swap);</style>
+  </defs>
+  <rect x="20.182" y="32.756" width="452.088" height="455.477" style="stroke: rgb(0, 0, 0); fill: rgb(156, 11, 147);"/>
+  <g transform="matrix(0.773206, 0, 0, 0.709653, 8.935674, 41.234021)" style="">
+    <text style="fill: rgb(255, 255, 255); font-family: Arya; font-size: 28px; white-space: pre;" transform="matrix(0.674946, 0, 0, 0.674946, -19.915173, -1.677552)"><tspan x="85.029" y="166.869">वराचं नाव:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>वधूचं नाव:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>वराचा पत्ता:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>वधूचा पत्ता:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>दिनांक / तारीख:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>हळदी / इतर दिवस:</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>स्थळ</tspan><tspan x="85.029" dy="1.6em">​</tspan><tspan>निमंत्रण संदेश: </tspan><tspan x="85.029" dy="1.6em">​</tspan></text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Rozha One&quot;; font-size: 18.9px; white-space: pre;" x="185.354" y="111.702">{gname}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Rozha One&quot;; font-size: 18.9px; white-space: pre;" x="183.953" y="143.3">{bname}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Amita; font-size: 18.9px; white-space: pre;" x="186.823" y="174.66">{gadd}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Amita; font-size: 18.9px; white-space: pre;" x="186.857" y="205.78">{badd}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Amita; font-size: 18.9px; white-space: pre;" x="173.705" y="233.586">{day_date}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Modak; font-size: 18.9px; white-space: pre;" x="183.611" y="262.487">{engday}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Arya; font-size: 18.9px; white-space: pre;" x="272.742" y="263.817">{halday}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 18.9px; white-space: pre;" x="186.207" y="295.211">{venue}</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Arya; font-size: 18.9px; white-space: pre;" x="198.852" y="325.307">{inv}</text>
+  </g>
+  <rect x="41.695" y="322.351" width="139.083" height="146.371" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+  <rect x="200" y="321.439" width="139.083" height="146.371" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 1;"/>
+  <image href="{pic-groom}" x="100" y="280" width="120" height="120" style="" transform="matrix(1.146776, 0, 0, 1.197389, -72.375764, -12.147116)"/>
+  <image href="{pic-bride}" x="273.914" y="280" width="120" height="120" style="" transform="matrix(1.146667, 0, 0, 1.1975, -114.088106, -11.607454)"/>
+</svg>

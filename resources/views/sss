@@ -1,0 +1,32 @@
+const fields = [
+  {
+    title: "Student Name",
+    slug: "student_name",
+    data: "Ajit Tilekar",
+    type: "text"
+  },
+  {
+    title: "Student Bio",
+    slug: "student_bio",
+    data: "Passionate about coding and learning new technologies.",
+    type: "textarea"
+  },
+  {
+    title: "Profile Photo",
+    slug: "profile_photo",
+    data: "/uploads/profile.jpg",
+    type: "image"
+  },
+  {
+    title: "Course Name",
+    slug: "course_name",
+    data: "Full Stack Development",
+    type: "text"
+  },
+  {
+    title: "About Course",
+    slug: "about_course",
+    data: "This course covers frontend, backend, database and deployment.",
+    type: "textarea"
+  }
+];
