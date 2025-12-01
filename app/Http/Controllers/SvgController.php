@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Spatie\Browsershot\Browsershot;
-use Illuminate\Support\Facades\Log;
 
 class SvgController extends Controller
 {
@@ -32,7 +30,6 @@ class SvgController extends Controller
 
     public function generate(Request $request)
     {
-        // 1) Validate form data (फोटो field नावे form शी match)
         $data = $request->validate([
             'template'   => 'required|string',
             'gname'      => 'required|string|max:200',
@@ -44,17 +41,17 @@ class SvgController extends Controller
             'halday'     => 'nullable|string|max:100',
             'venue'      => 'required|string|max:300',
             'inv'        => 'nullable|string|max:200',
-            'pic-groom'  => 'nullable|image|max:4096', // ✅ groom photo
-            'pic-bride'  => 'nullable|image|max:4096', // ✅ bride photo
+            'pic-groom'  => 'nullable|image|max:4096',
+            'pic-bride'  => 'nullable|image|max:4096',
         ]);
 
         $tplPath = public_path('svg_templates/' . $data['template']);
         abort_unless(is_file($tplPath), 404);
 
-        // 2) SVG load
+        // 1) SVG template load
         $svg = file_get_contents($tplPath);
 
-        // 3) फोटो base64 encode
+        // 2) Photos base64
         $groomPicVal = '';
         $bridePicVal = '';
 
@@ -70,7 +67,7 @@ class SvgController extends Controller
                 base64_encode(file_get_contents($request->file('pic-bride')->getRealPath()));
         }
 
-        // 4) text normalize (newline / <br> / \n)
+        // 3) Normalize text
         $gname    = $this->normalizeLineBreaks($data['gname']);
         $bname    = $this->normalizeLineBreaks($data['bname']);
         $gadd     = $this->normalizeLineBreaks($data['gadd']);
@@ -81,7 +78,7 @@ class SvgController extends Controller
         $venue    = $this->normalizeLineBreaks($data['venue']);
         $inv      = $this->normalizeLineBreaks($data['inv'] ?? '');
 
-        // 5) single-line placeholders replace (venue, inv नंतर handle करतो)
+        // 4) Simple placeholders
         $replacements = [
             '{gname}'      => e($gname),
             '{bname}'      => e($bname),
@@ -90,129 +87,45 @@ class SvgController extends Controller
             '{day_date}'   => e($dayDate),
             '{engday}'     => e($engday),
             '{halday}'     => e($halday),
-
-            // ✅ फोटो placeholders (त्यांना escape करू नये)
             '{pic-groom}'  => $groomPicVal,
             '{pic-bride}'  => $bridePicVal,
         ];
 
         $svg = str_replace(array_keys($replacements), array_values($replacements), $svg);
 
-        // 6) मल्टीलाइन placeholders ({venue}, {inv}) साठी <tspan> generate करा
+        // 5) Multiline placeholders
         $svg = $this->applyMultiline($svg, 'venue', $venue);
         $svg = $this->applyMultiline($svg, 'inv', $inv);
 
-        // 7) output dir तयार करा
-        $outputDir = public_path('generated');
-        if (!is_dir($outputDir)) {
-            mkdir($outputDir, 0775, true);
-        }
-
-        $fileBase = uniqid('invitation_');
-        $svgPath  = $outputDir . '/' . $fileBase . '.svg';
-        $pngPath  = $outputDir . '/' . $fileBase . '.png';
-
-        file_put_contents($svgPath, $svg);
-
-        // 8) PNG साठी HTML wrapper
-        $html = <<<HTML
-<!doctype html>
-<html lang="mr">
-<head>
-  <meta charset="utf-8">
-  <meta name="color-scheme" content="light">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-    }
-    svg {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  {$svg}
-</body>
-</html>
-HTML;
-
-        try {
-            Browsershot::html($html)
-                ->windowSize(1080, 1350)
-                ->waitUntilNetworkIdle()
-                ->save($pngPath);
-
-            return view('result', [
-                'image'   => url('generated/' . basename($pngPath)),
-                'message' => null,
-            ]);
-        } catch (\Exception $e) {
-            Log::error('Browsershot failed: ' . $e->getMessage());
-
-            // PNG fail झाला तर SVG तरी देऊ
-            return view('result', [
-                'image'   => url('generated/' . basename($svgPath)),
-                'message' => 'PNG conversion failed, SVG generated successfully.',
-            ]);
-        }
+        return view('result', [
+            'svg' => $svg,
+        ]);
     }
 
-    public function cleanup()
-    {
-        $outputDir = public_path('generated');
-        $files = glob($outputDir . '/*');
-
-        foreach ($files as $file) {
-            if (is_file($file) && time() - filemtime($file) > 86400) {
-                unlink($file);
-            }
-        }
-
-        return response()->json(['message' => 'Old files cleaned']);
-    }
-
-    /**
-     * textarea मधला Enter, \n, आणि <br> सगळं actual newline (\n) मध्ये convert करतो
-     */
     protected function normalizeLineBreaks(?string $text): string
     {
-        if (!$text) {
-            return '';
-        }
+        if (!$text) return '';
 
-        // HTML <br> → newline
         $text = str_replace(['<br>', '<br/>', '<br />'], "\n", $text);
-
-        // literal "\n" string → newline
         $text = str_replace("\\n", "\n", $text);
-
-        // CRLF / CR → LF
         $text = str_replace(["\r\n", "\r"], "\n", $text);
 
         return $text;
     }
 
-    /**
-     * दिलेल्या placeholder ({venue}, {inv}) साठी multiline <tspan> तयार करतो
-     * आणि त्याला योग्य <text ...>{placeholder}</text> च्या जागी बसवतो.
-     */
     protected function applyMultiline(string $svg, string $placeholder, string $text): string
     {
         $lines = array_filter(array_map('trim', explode("\n", $text)), fn($l) => $l !== '');
         if (empty($lines)) {
-            // जर काही text नसेल तर placeholder रिकामा करा
             return str_replace('{'.$placeholder.'}', '', $svg);
         }
 
-        // <text ... x="..." ...>{placeholder}</text> pattern शोधू
         $pattern = '/(<text\b[^>]*x="([^"]+)"[^>]*>\s*)\{'.$placeholder.'\}(\s*<\/text>)/u';
 
         return preg_replace_callback($pattern, function ($m) use ($lines) {
-            $prefix = $m[1];   // <text ...>
-            $x      = $m[2];   // x value
-            $suffix = $m[3];   // </text>
+            $prefix = $m[1];
+            $x      = $m[2];
+            $suffix = $m[3];
 
             $tspans = [];
             foreach ($lines as $i => $line) {
